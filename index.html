@@ -2,97 +2,93 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Boleta de Notas - Nancy Natalia Castellanos Mayorga</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; color: #333; line-height: 1.4; }
-        .container { max-width: 800px; margin: auto; border: 1px solid #eee; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+        body { font-family: Arial, sans-serif; padding: 10px; color: #000; font-size: 12px; }
+        .container { width: 100%; max-width: 750px; margin: auto; }
         
-        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #1a4a8e; padding-bottom: 10px; }
-        .header h1 { color: #1a4a8e; margin: 0; font-size: 28px; letter-spacing: 2px; }
-        .header p { margin: 5px; font-style: italic; color: #666; }
-        .header h2 { margin-top: 15px; font-size: 20px; color: #444; text-transform: uppercase; }
+        .header { text-align: center; margin-bottom: 15px; }
+        .header h1 { margin: 0; font-size: 22px; font-weight: bold; }
+        .header p { margin: 2px; font-size: 14px; }
         
-        .info-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; }
-        .info-table td { border: 1px solid #ddd; padding: 10px; font-size: 14px; }
-        .label { font-weight: bold; background-color: #f9f9f9; width: 20%; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+        th, td { border: 1px solid black; padding: 4px 8px; text-align: left; }
         
-        .notes-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; }
-        .notes-table th { background-color: #1a4a8e; color: white; border: 1px solid #1a4a8e; padding: 12px; text-align: left; font-size: 14px; }
-        .notes-table td { border: 1px solid #ddd; padding: 10px; font-size: 13px; }
-        .notes-table tr:nth-child(even) { background-color: #f2f2f2; }
-        .text-center { text-align: center; }
+        .title-row { background-color: #ffffff; text-align: center; font-weight: bold; border: none; }
+        .no-border { border: none; text-align: center; font-weight: bold; font-size: 16px; padding: 15px; }
         
-        .observations { font-size: 12px; margin-top: 20px; background: #fffbe6; padding: 15px; border: 1px solid #ffe58f; border-radius: 4px; }
-        .footer { margin-top: 60px; text-align: center; }
-        .signature-box { margin: auto; width: 300px; }
-        .signature-line { border-top: 1px solid #333; margin-bottom: 10px; }
-        .director-name { font-weight: bold; font-size: 14px; margin: 0; }
-        .director-title { font-size: 12px; color: #666; margin: 0; }
-        .watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg); font-size: 100px; color: rgba(0,0,0,0.03); z-index: -1; pointer-events: none; }
+        .gray-header { background-color: #f2f2f2; font-weight: bold; }
+        .centered { text-align: center; }
+        
+        .observations { margin-top: 15px; font-size: 11px; line-height: 1.2; }
+        .footer { margin-top: 40px; text-align: center; }
+        .signature { margin: auto; width: 250px; border-top: 1px solid black; padding-top: 5px; }
+        .internal-doc { font-size: 10px; color: #666; margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="watermark">ESCOLARIS</div>
-    
     <div class="header">
         <h1>ESCOLARIS</h1>
         <p>Educación para trascender</p>
-        <h2>REPORTE DE NOTAS</h2>
     </div>
 
-    <table class="info-table">
+    <table>
         <tr>
-            <td class="label">NOMBRE:</td>
-            <td>Nancy Natalia Castellanos Mayorga</td>
-            <td class="label">GRADO:</td>
-            <td>3° Básico</td>
+            <td style="width: 15%; font-weight: bold;">NOMBRE:</td>
+            <td style="width: 45%;">Castellanos Mayorga, Nancy Natalia</td>
+            <td style="width: 15%; font-weight: bold;">GRADO:</td>
+            <td style="width: 25%;">3° Básico</td>
         </tr>
         <tr>
-            <td class="label">FECHA:</td>
-            <td>Marzo 2026</td>
-            <td class="label">DOCUMENTO:</td>
-            <td>Interno 2026</td>
+            <td colspan="2" style="border: none;"></td>
+            <td style="font-weight: bold;">FECHA:</td>
+            <td>Abril 2026</td>
         </tr>
     </table>
 
-    <table class="notes-table">
-        <thead>
-            <tr>
-                <th>MATERIA</th>
-                <th class="text-center" style="width: 20%;">Punteo Actual</th>
-                <th class="text-center" style="width: 20%;">Punteo Sugerido</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Comunicación y Lenguaje</td><td class="text-center">39.76</td><td class="text-center">40.0</td></tr>
-            <tr><td>Matemática III</td><td class="text-center">16.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Cultura e Idiomas Maya, Garífuna o Xinca</td><td class="text-center">37.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Educación Física 3 Básico</td><td class="text-center">32.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Música</td><td class="text-center">16.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Expresión Artística</td><td class="text-center">16.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Ciencias Naturales III</td><td class="text-center">20.80</td><td class="text-center">40.0</td></tr>
-            <tr><td>Estudios Sociales III</td><td class="text-center">31.20</td><td class="text-center">40.0</td></tr>
-            <tr><td>Emprendimiento para la Productividad</td><td class="text-center">32.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Idioma Inglés III</td><td class="text-center">30.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>TICS III</td><td class="text-center">0.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Teatro</td><td class="text-center">32.00</td><td class="text-center">40.0</td></tr>
-            <tr><td>Danza</td><td class="text-center">36.00</td><td class="text-center">40.0</td></tr>
-        </tbody>
+    <div class="no-border">REPORTE DE NOTAS</div>
+
+    <table>
+        <tr class="gray-header">
+            <td style="width: 50%;">REPORTE PARCIAL DE</td>
+            <td style="width: 50%;" colspan="2">NOTAS</td>
+        </tr>
+        <tr class="gray-header">
+            <td>MATERIA</td>
+            <td class="centered">Punteo Actual</td>
+            <td class="centered">Punteo sugerido</td>
+        </tr>
+        <tr><td>Comunicación y Lenguaje</td><td class="centered">39.76</td><td class="centered">40</td></tr>
+        <tr><td>Matemática III</td><td class="centered">16</td><td class="centered">40</td></tr>
+        <tr><td>Cultura e Idiomas Maya, Garífuna o Xinca</td><td class="centered">37</td><td class="centered">40</td></tr>
+        <tr><td>Educación Física 3 Básico</td><td class="centered">32</td><td class="centered">40</td></tr>
+        <tr><td>Música</td><td class="centered">16</td><td class="centered">40</td></tr>
+        <tr><td>Expresión Artística</td><td class="centered">16</td><td class="centered">40</td></tr>
+        <tr><td>Ciencias Naturales III</td><td class="centered">20.8</td><td class="centered">40</td></tr>
+        <tr><td>Estudios Sociales III</td><td class="centered">31.2</td><td class="centered">40</td></tr>
+        <tr><td>Emprendimiento para la productividad</td><td class="centered">32</td><td class="centered">40</td></tr>
+        <tr><td>Idioma Inglés III</td><td class="centered">30</td><td class="centered">40</td></tr>
+        <tr><td>TICS III</td><td class="centered">0</td><td class="centered">40</td></tr>
+        <tr><td>Teatro</td><td class="centered">32</td><td class="centered">40</td></tr>
+        <tr><td>Danza</td><td class="centered">36</td><td class="centered">40</td></tr>
     </table>
 
     <div class="observations">
-        <strong>OBSERVACIONES:</strong>
-        <p>El punteo sugerido es para este bloque como fecha sugerida el 30 de abril. Para la fecha actual puede que en algunos cursos tengan tareas pendientes por calificar. Recuerden que el punteo actual es acumulativo hasta llegar a 100 pts.</p>
+        <strong>OBSERVACIONES</strong><br>
+        El punteo sugerido es para este bloque como fecha sugerida el 30 de abril[cite: 7].<br>
+        Para la fecha actual puede que en algunos cursos tengan tareas pendientes por calificar para llegar a la nota del Punteo sugerido[cite: 8].<br>
+        Recuerden que el punteo actual es acumulativo hasta llegar a 100 pts[cite: 9].
     </div>
 
     <div class="footer">
-        <div class="signature-box">
-            <div class="signature-line"></div>
-            <p class="director-name">Jorge Luis Rodriguez Sandoval</p>
-            <p class="director-title">Director Académico Escolaris</p>
+        <p>COLEGIO ESCOLARIS<br>DIRECCION</p>
+        <div style="height: 40px;"></div>
+        <div class="signature">
+            <strong>Jorge Luis Rodriguez Sandoval</strong><br>
+            Director Académico Escolaris
         </div>
+        <p class="internal-doc">Colegio Escolaris Documento interno 2026</p>
     </div>
 </div>
 
